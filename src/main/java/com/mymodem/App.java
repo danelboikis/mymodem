@@ -14,8 +14,6 @@ public class App
     public static void main( String[] args ) throws Exception
     {
         System.out.println("start");
-        byte b = 12;
-        System.out.println(b);
         /*byte[] bs = new byte[]{0x0, (byte)0xff, 0x0};
         Modulator.modulate(bs);*/
         Demodulator.demodulate();
