@@ -30,7 +30,7 @@ public class Modulator {
         int bDataIndex = 0;
 
         for (byte b : data) {
-            for (int i = 0; i < 8; i++) { // for each bit
+            for (int i = 7; i >= 0; i--) { // for each bit
                 double frequency = carrierFrequency + ((b >> i) & 0x1) * frequencyChange;
                 
                 for (int j = 0; j < numSamples; j++) {
